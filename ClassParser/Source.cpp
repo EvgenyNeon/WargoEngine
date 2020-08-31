@@ -9,6 +9,9 @@ protected:
 private:
 };
 
+
+
+
 class WGClassParser
 {
 public:
