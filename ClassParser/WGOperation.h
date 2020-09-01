@@ -11,7 +11,7 @@ class WGOperation;
 class WGOperationDescriptor
 {
 public:
-	template <typename T> WGOperation* CreateInstance();
+	WGOperation* CreateInstance();
 protected:
 	void SetInputParameterDesc(std::string parameter_name, WGTypeDescriptor* parameter);
 	WGTypeDescriptor* GetInputParameterDesc(std::string parameter_name);
@@ -33,6 +33,7 @@ public:
 protected:
 
 private:
+	static unsigned long long OperationID;
 	WGOperationDescriptor* OperationDescriptor;
 	std::map<std::string, WGTypeObject*> InputParameters;
 	std::map<std::string, WGTypeObject*> OutputParameters;
