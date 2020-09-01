@@ -12,6 +12,7 @@ enum class WGTypeEnum
 	STRUCT,
 	CLASS,
 	ENUM,
+	STATEMENT,
 	MAX_TYPE_ENUM
 };
 

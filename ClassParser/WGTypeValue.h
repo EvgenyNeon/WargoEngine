@@ -49,4 +49,9 @@ class WGEnum : public WGTypeValue
 
 };
 
+class WGStatement : public WGTypeValue
+{
+	WGStatement* NextStatement = nullptr;
+};
+
 

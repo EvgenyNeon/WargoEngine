@@ -6,11 +6,12 @@
 
 class WGTypeDescriptor;
 class WGTypeObject;
+class WGOperation;
 
 class WGOperationDescriptor
 {
 public:
-	WGOperation* CreateInstance();
+	template <typename T> WGOperation* CreateInstance();
 protected:
 	void SetInputParameterDesc(std::string parameter_name, WGTypeDescriptor* parameter);
 	WGTypeDescriptor* GetInputParameterDesc(std::string parameter_name);
@@ -28,7 +29,7 @@ class WGOperation
 {
 	friend class WGOperationDescriptor;
 public:
-
+	void Execute();
 protected:
 
 private:
