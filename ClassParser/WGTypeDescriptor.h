@@ -32,6 +32,6 @@ class WGTypeDescriptor
 	WGTypeEnum TypeEnum;
 	WGDataFormat DataFormat;
 	std::string TypeName;
-	int64_t TypeID;
+	unsigned long long TypeID;
 };
 
